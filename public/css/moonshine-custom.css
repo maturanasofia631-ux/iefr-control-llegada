@@ -1,0 +1,100 @@
+/* ============================================
+   LOGIN Y PANEL — COLORES INSTITUCIONALES IEFR
+   Sobrescribe el palette rosa por rojo/azul institucional
+   ============================================ */
+
+/* ---------- BOTONES PRINCIPALES ---------- */
+button[type="submit"],
+.btn-primary,
+button.btn-primary,
+[class*="btn-primary"] {
+    background-color: #8B1A1A !important;
+    border-color:     #8B1A1A !important;
+    color: #ffffff !important;
+}
+
+button[type="submit"]:hover,
+.btn-primary:hover,
+button.btn-primary:hover,
+[class*="btn-primary"]:hover {
+    background-color: #A52A2A !important;
+    border-color:     #A52A2A !important;
+}
+
+/* ---------- LINKS ---------- */
+a {
+    color: #8B1A1A;
+}
+
+a:hover {
+    color: #A52A2A;
+}
+
+/* ---------- INPUTS CON FOCO ---------- */
+input:focus,
+textarea:focus,
+select:focus,
+.form-control:focus {
+    border-color: #8B1A1A !important;
+    outline-color: #8B1A1A !important;
+    box-shadow: 0 0 0 2px rgba(139, 26, 26, 0.15) !important;
+}
+
+/* ---------- TOGGLE / SWITCH / CHECKBOX ---------- */
+input[type="checkbox"]:checked,
+input[type="radio"]:checked,
+.toggle input:checked + span,
+[role="switch"][aria-checked="true"] {
+    background-color: #8B1A1A !important;
+    border-color:     #8B1A1A !important;
+}
+
+/* ---------- BARRA SUPERIOR DE TARJETAS ---------- */
+.authentication::before,
+.login-card::before,
+[class*="card"]::before {
+    background-color: #8B1A1A !important;
+}
+
+/* ---------- FONDO ROSA PÁLIDO → GRIS CLARO ---------- */
+body,
+.authentication,
+[class*="login"] {
+    background-color: #f9f9f9 !important;
+}
+
+/* ---------- SIDEBAR ACTIVO ---------- */
+.menu-item.active,
+[class*="menu-item"][class*="active"],
+nav a.active {
+    background-color: rgba(139, 26, 26, 0.08) !important;
+    color: #8B1A1A !important;
+}
+
+/* ---------- BADGES / ETIQUETAS ROSADAS ---------- */
+[class*="badge"],
+[class*="chip"] {
+    background-color: #fceaea !important;
+    color: #8B1A1A !important;
+}
+
+/* ---------- TABLA HEADER ---------- */
+thead tr,
+table thead tr {
+    background-color: #f9f9f9 !important;
+}
+
+/* ---------- PAGINACIÓN ACTIVA ---------- */
+.pagination .active,
+[class*="pagination"] [class*="active"] {
+    background-color: #8B1A1A !important;
+    border-color:     #8B1A1A !important;
+    color: #fff !important;
+}
+
+/* ---------- Ocultar avatares vacíos (bug de MoonShine) ---------- */
+form img[src=""],
+form img[src="http://"],
+img[src=""] {
+    display: none !important;
+}
